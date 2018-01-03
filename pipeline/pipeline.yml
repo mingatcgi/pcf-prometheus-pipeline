@@ -13,19 +13,19 @@ resources:
 - name: pcf-prometheus-pipeline
   type: git
   source:
-    uri: https://github.com/pivotal-cf/pcf-prometheus-pipeline.git
-    branch: master
+    uri: https://github.com/mingatcgi/pcf-prometheus-pipeline.git
+    branch: prm-fix
 - name: prometheus-release-git
   type: git
   source:
     uri: https://github.com/bosh-prometheus/prometheus-boshrelease.git
-    branch: master 
+    branch: master
 - name: prometheus-release-blob
   type: github-release
   source:
     user: bosh-prometheus
     repository: prometheus-boshrelease
-    access_token: ((github_token))  
+    access_token: ((github_token))
 - name: node-exporter-release
   type: github-release
   source:
